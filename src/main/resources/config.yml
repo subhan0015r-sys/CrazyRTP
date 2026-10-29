@@ -1,0 +1,24 @@
+# ==========================================
+#      CrazyRTP v2.0 - Created by Subhan
+#   Compatible: 1.21.x - 26.2 & GeyserMC/PE
+# ==========================================
+
+settings:
+  warmup-seconds: 5
+  cooldown-seconds: 15
+  menu-timeout-seconds: 30
+  max-search-attempts: 12
+
+worlds:
+  OVERWORLD:
+    world-name: "world"
+    min-radius: 250
+    max-radius: 5000
+  NETHER:
+    world-name: "world_nether"
+    min-radius: 150
+    max-radius: 2500
+  END:
+    world-name: "world_the_end"
+    min-radius: 800
+    max-radius: 4000
