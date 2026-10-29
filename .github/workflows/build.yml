@@ -1,0 +1,28 @@
+name: Build CrazyRTP by Subhan
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build Plugin JAR with Maven
+        run: mvn -B package --file pom.xml
+
+      - name: Upload Ready-to-Use ZIP (Contains .jar)
+        uses: actions/upload-artifact@v4
+        with:
+          name: CrazyRTP-v2.0-by-Subhan
+          path: target/CrazyRTP-v2.0-by-Subhan.jar
