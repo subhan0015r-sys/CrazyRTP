@@ -1,0 +1,26 @@
+name: CrazyRTP
+version: '2.0.0'
+main: com.subhan.crazyrtp.CrazyRTP
+api-version: '1.21'
+authors: [Subhan]
+description: Crazy 3D VR Floating RTP Menu by Subhan (Java 1.21-26.2 & Geyser/Bedrock Supported)
+
+commands:
+  rtp:
+    description: Opens the CrazyRTP 3D VR Teleport Menu
+    usage: /<command> [overworld|nether|end|reload]
+    aliases: [crazyrtp, wild, randomtp]
+
+permissions:
+  crazyrtp.use:
+    description: Allows opening and using the CrazyRTP VR menu
+    default: true
+  crazyrtp.admin:
+    description: Allows reloading the plugin configuration
+    default: op
+  crazyrtp.bypass.cooldown:
+    description: Bypasses the RTP cooldown timer
+    default: op
+  crazyrtp.bypass.timer:
+    description: Bypasses the 5-second stand-still warmup timer
+    default: false
